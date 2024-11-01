@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'revelia': ['Revelia', 'sans-serif'],
+        'satoshi': ['Satoshi', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
