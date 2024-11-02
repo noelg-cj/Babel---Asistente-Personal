@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import robot from "../../assets/robot.png"
 import logo from "../../assets/Logo.png"
 import graphic from "../../assets/Graphic.svg"
+import { Link } from 'react-router-dom'
 
 const buttonTexts = [
     "Get Started",
@@ -23,7 +24,7 @@ const Landing = () => {
     <div className='relative overflow-hidden font-satoshi w-screen h-screen bg-gradient-to-br from-[#CEBAA0] to-[#D6D0C8]'>
         <div className='flex items-center justify-end w-screen px-8'>
             <img src={logo} alt="logo" className='w-[50px] absolute left-1/2 -translate-x-1/2 mt-6' />
-            <button className='font-semibold border bg-black text-white hover:bg-transparent hover:text-black transition border-black w-[200px] py-3 rounded-full mt-6'>Login</button>
+            <Link to={"/login"} className='font-semibold text-center border bg-black text-white hover:bg-transparent hover:text-black transition border-black w-[200px] py-3 rounded-full mt-6'>Login</Link>
         </div>
         <div className='px-16'>
             <h1 className='font-revelia text-[9rem] leading-none pt-7'>LANAUAGE-FREE <br /> PERSONAL ASSISTANT</h1>
